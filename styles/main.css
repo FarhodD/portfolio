@@ -1,0 +1,148 @@
+/* HEADER */
+.header {
+  padding: 10px 0px;
+  font-family: var(--primary-font);
+  background-color: #555454;
+  box-shadow: 0 0 10px 0 #212121;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu__link {
+  color:#fffb;
+  font-weight: 400;
+  transition: .5s;
+}
+
+.menu__link:hover {
+  color: var(--primary-color);
+}
+
+/* DROPDOWN */
+.change__languages {
+  position: relative;
+  width: 170px;
+  color: #fff;
+}
+
+.change__languages-select {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.change__languages-list {
+  position: absolute;
+  top: 50px;
+  padding: 5px;
+  background-color: #2b2a2a;
+  border-radius: 5px;
+  width: 100%;
+  opacity: 0;
+  display: none;
+}
+
+.change__languages-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: .5s;
+  border-radius: 5px;
+}
+
+.change__languages-item:hover {
+  background-color: #4f4f4f;
+}
+
+.change__languages-list--open {
+  display: block;
+  opacity: 1;
+}
+
+.change__languages-arr {
+  transform: rotate(180deg);
+  transition: .3s;
+}
+
+.change__languages-arr--rotate {
+  transform: rotate(360deg);
+}
+
+.change__languages-arr path {
+  fill: #fff;
+}
+
+.burger__menu {
+  display: none;
+}
+
+/* MAIN__SECTION */
+.main__section {
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
+.main__section__inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.main__section-bg {
+  position: absolute;
+  background-image: url(../images/icons/browser.svg);
+  background-repeat: no-repeat;
+  opacity: .6;
+  width: 500px;
+  height: 500px;
+  z-index: -1;
+}
+
+.main__section-about {
+  font-family: var(--secondary-font);
+  color: #fff;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.main__section-about--title {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 13px;
+}
+
+.main__section-about--subtitle {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.main__btn {
+  width: 200px;
+  height: 45px;
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #35CE58;
+  color: #fff;
+  transition: .5s all;
+  cursor: pointer;
+}

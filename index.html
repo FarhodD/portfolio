@@ -5,7 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfolio</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- STYLES -->
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/animation.css">
@@ -13,7 +23,76 @@
 </head>
 
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="logo">
+          <img width="70" src="./images/icons/logo.png" alt="" class="logo__svg">
+        </a>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Обо мне</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Порфолио</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+          </ul>
+          <button class="burger__menu" onclick="toggleMenu()">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </nav>
+        <div class="change__languages">
+          <div class="change__languages-select">
+            <span class="change__languages-selected">Русский</span>
+            <div class="change__languages-icon">
+              <svg class="change__languages-arr" width="15" height="10" viewBox="0 0 20 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.00009 15H19.0001C19.1823 14.9994 19.361 14.9492 19.5168 14.8546C19.6726 14.7601 19.7996 14.6248 19.8843 14.4634C19.9689 14.3021 20.008 14.1206 19.9972 13.9387C19.9864 13.7568 19.9262 13.5813 19.8231 13.431L10.8231 0.430999C10.4501 -0.108001 9.55209 -0.108001 9.17809 0.430999L0.178085 13.431C0.0739103 13.5809 0.0128196 13.7566 0.00145064 13.9388C-0.00991832 14.121 0.0288693 14.3029 0.113599 14.4646C0.198329 14.6263 0.325761 14.7618 0.48205 14.8561C0.638338 14.9505 0.817505 15.0003 1.00009 15Z"
+                  fill="black" />
+              </svg>
+            </div>
+          </div>
+          <ul class="change__languages-list">
+            <li class="change__languages-item active">Русский</li>
+            <li class="change__languages-item">English</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- MAIN__SECTION -->
+    <section class="main__section">
+      <div class="container">
+        <div class="main__section__inner">
+          <div class="main__section-bg"></div>
+          <div class="section__about-left-block">
+            <div class="main__section-about">
+              <h1 class="main__section-about--title">Сомони
+                Содиков</h1>
+              <h2 class="main__section-about--subtitle">Веб разработчик</h2>
+            </div>
+            <div class="btn__container">
+              <button class="main__btn">Заказать</button>
+            </div>
+          </div>
+          <div class="main__section-img">
+            <img src="./images/main-section-bg.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT__ME -->
+    <section class="about__me">
+    </section>
+  </main>
+  <footer class="footer"></footer>
+
   <script src="./scripts/app.js"></script>
 </body>
 

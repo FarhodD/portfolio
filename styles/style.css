@@ -1,0 +1,51 @@
+:root {
+  /* FONTS */
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Jura', sans-serif;
+
+  /* COLORS */
+  --primary-color: #ffffff;
+  --light-green-color: #72FF78;
+  --dark-green-color: #35CE58;
+  --light-orange-color: #FF7715;
+  --dark-orange-color: #F76748;
+  --light-blue-color: #00A3FF;
+  --dark-blue-color: #0085FF;
+  --light-red-color: #FF5F5F;
+  --dark-red-color: #FC2A1C;
+  --purple-color: #739AF0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  background-color: #393939;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
