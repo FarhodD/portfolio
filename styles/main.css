@@ -15,15 +15,13 @@
   justify-content: space-between;
 }
 
-.nav {}
-
 .menu {
   display: flex;
   gap: 30px;
 }
 
 .menu__link {
-  color:#fffb;
+  color: #fffb;
   font-weight: 400;
   transition: .5s;
 }
@@ -123,14 +121,14 @@
 }
 
 .main__section-about--title {
-  font-size: 70px;
+  font-size: 72px;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 13px;
 }
 
 .main__section-about--subtitle {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
   line-height: normal;
 }
@@ -139,10 +137,86 @@
   width: 200px;
   height: 45px;
   font-family: var(--primary-font);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   background-color: #35CE58;
   color: #fff;
   transition: .5s all;
   cursor: pointer;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+/* ABOUT__ME */
+.about__me {
+  padding: 50px 0;
+}
+
+.section__titles {
+  font-family: var(--secondary-font);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.about__me-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  position: relative;
+
+}
+
+.about__me-bg--container {
+  position: absolute;
+  z-index: -2;
+}
+
+.about__me-bg {
+  width: 550px;
+  opacity: .5;
+}
+
+.about__me-list {
+  font-size: 23px;
+}
+
+.about__me-item {
+  margin-bottom: 30px;
+}
+
+.about__me-key {
+  min-width: 200px;
+  display: inline-block;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+}
+
+.about__me-value {
+  font-weight: 700;
+  color: #fff;
+}
+
+.about__me-value-technologies {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.about__me-technology {
+  display: flex;
+  align-items: center;
+}
+
+.about__me-technology--icon {
+  width: 50px;
+}
+
+.about__me-technology--name {
+  color: #fff;
+  font-weight: 700;
 }
